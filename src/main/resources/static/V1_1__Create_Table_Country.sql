@@ -1,7 +1,7 @@
 -- -----------------------------------------------------
 -- Table `olx`.`Country`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `olx`.`Country` (
+CREATE TABLE IF NOT EXISTS `Country` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `country_name` VARCHAR(30) NULL,
   `country_code` VARCHAR(15) NULL,
