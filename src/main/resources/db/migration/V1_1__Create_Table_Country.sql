@@ -1,7 +1,7 @@
 -- -----------------------------------------------------
 -- Table `olx`.`Country`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Country` (
+CREATE TABLE IF NOT EXISTS `country` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `country_name` VARCHAR(30) NULL,
   `country_code` VARCHAR(15) NULL,
@@ -9,4 +9,5 @@ CREATE TABLE IF NOT EXISTS `Country` (
   `currency_code_a` VARCHAR(3) NULL,
   `currency_code_n` VARCHAR(3) NULL,
   `currency_name` VARCHAR(200) NULL,
-  PRIMARY KEY (`id`));
+  PRIMARY KEY (`id`)
+  )ENGINE=InnoDB DEFAULT CHARSET=UTF8MB3;

@@ -24,7 +24,7 @@ public class City {
     @Column(name = "name", nullable = false, length = 45)
     private String name;
 
-    /*@Column(name = "description", columnDefinition = "TEXT", length = 500)
+    @Column(name = "description", columnDefinition = "TEXT", length = 500)
     private String description;
 
     private String thumbnail;
@@ -35,10 +35,10 @@ public class City {
     @Column(name = "updated_at")
     private Timestamp updatedAt;
 
-    @ManyToOne (fetch = FetchType.LAZY)
+    @ManyToOne (fetch = FetchType.EAGER)
     @JoinColumn (name = "province_id")
     private Province province;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "city")
-    private List<District> districts;*/
+    @OneToMany (fetch = FetchType.EAGER, mappedBy = "city")
+    public List<District> districts;
 }
