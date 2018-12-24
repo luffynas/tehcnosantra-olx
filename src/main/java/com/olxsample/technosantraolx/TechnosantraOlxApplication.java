@@ -1,8 +1,7 @@
 package com.olxsample.technosantraolx;
 
-import com.olxsample.technosantraolx.service.UserService;
-import org.flywaydb.core.Flyway;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
